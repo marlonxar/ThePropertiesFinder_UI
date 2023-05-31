@@ -4,7 +4,7 @@
 /out-tsc
 
 #dependencies
-/node-modules
+/node_modules
 
 #IDES and Editors
 /.idea
