@@ -1,1 +1,44 @@
+#Compiled Output
+/dist
+/tmp
+/out-tsc
 
+#dependencies
+/node-modules
+
+#IDES and Editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+#IDE - VScode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+#System Files
+.DS_Store
+Thumbs.db 
+
+#Environment configuration
+.env*
+/env 
+*.env 
