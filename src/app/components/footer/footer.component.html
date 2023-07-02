@@ -8,10 +8,10 @@
         </div>
 
         <div class="flex-group" id="centerGroup">
-                <a href="/" title="About section" class="footerOptions">ABOUT</a>
-                <a href="/" title="Blog section" class="footerOptions">BLOG</a>
-                <a href="/" title="Services section" class="footerOptions">SERVICES</a>
-                <a href="/" title="Contacts section" class="footerOptions">CONTACTS</a>
+                <a href="/" title="About section" class="footerOptions">{{ 'ABOUT' | translate}}</a>
+                <a href="/" title="Blog section" class="footerOptions">{{ 'BLOG' | translate}}</a>
+                <a href="/" title="Services section" class="footerOptions">{{ 'SERVICES' | translate}}</a>
+                <a href="/" title="Contacts section" class="footerOptions">{{ 'CONTACT' | translate}}</a>
         </div>
 
         <div class="flex-group" id="rightGroup">
@@ -32,21 +32,21 @@
 
     <div class="subscribe-container">
     <a title="The Properties Finder" class="logo" id="subscribeNow" alt="Subscribe now">
-       SUBSCRIBE<a id="theWord">&nbsp;NOW</a>
+       {{'SUBSCRIBE' | translate }}<a id="theWord">&nbsp; {{ 'NOW' | translate }}</a>
     </a>
-    <input type="text" placeholder="Your Email" class="subscribeNowInput">
+    <input type="text" [placeholder]="yourEmailKey" class="subscribeNowInput">
     <button class="subscribeButton"> &nbsp; &nbsp; ></button>
     </div>
 
     <div class="languageDiv">
-    <select class="language-dropdown">
+    <select class="language-dropdown" (change)="changeLang($event.target)">
         <option value="" selected disabled>Language</option>
-        <option value="en">English</option>
-        <option value="es">Español</option>
+        <option value="en" [selected]="lang == 'en'" >English</option>
+        <option value="es" [selected]="lang == 'es'">Español</option>
       </select>
       </div>
 
-    <a class="copyright">Marlon Alvarez R. 2023. All rights reserved.</a>
+    <a class="copyright">{{ 'Marlon_Alvarez_R_2023_All_rights_reserved' | translate}}</a>
 
     </div>
   </footer>

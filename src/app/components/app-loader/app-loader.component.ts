@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-loader',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-loader.component.scss']
 })
 export class AppLoaderComponent {
+  lang: String;
+
+  constructor(private translateService: TranslateService){
+    this.lang = localStorage.getItem('lang') || 'en';
+  }
 
 }
