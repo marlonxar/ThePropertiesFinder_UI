@@ -1,0 +1,126 @@
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.content .tittleBox{
+position: relative;
+max-width: 600px;
+}
+
+.content .tittleBox h2{
+    font-size: 3.1em;
+    text-transform: uppercase;
+    color: #6D9886;
+    line-height: 1.2;
+    transition: transform 0.3s;
+}
+
+.content .tittleBox h2 span{
+    background: #6D9886;
+    color: #ffffd5;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.content .tittleBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #6D9886;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: end;
+    transition: transform 0.3s;
+}
+
+.content .tittleBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffd5;
+    background: #6D9886;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.content .tittleBox a:hover{
+    color: #6D9886;
+    background: #ffffd5;
+    transform: scale(1.2); 
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+}
+
+.content .imgBox img{
+    width: 480px;
+    transition: transform 0.3s;
+}
+
+.content .imgBox img:hover{
+    transform: scale(1.2);
+    animation: rotateAnimation 2s infinite;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(10deg) scale(1);
+    }
+    50% {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(10deg) scale(1);
+    }
+  }
+
+.content .tittleBox h2:hover{
+    transform: scale(1.2);
+}
+
+.content .tittleBox p:hover{
+    transform: scale(1.2);
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 270px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    transition: transform 0.3s;
+    color: #424242;
+}
+
+.copyright p:hover{
+    transform: scale(1.1);
+}
