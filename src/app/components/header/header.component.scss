@@ -1,10 +1,14 @@
+header{
+    z-index: 2;
+}
+
 .header-primary{
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     width: 100%;
     height: 4.9625rem;
-    background-color: #F2E7D5;
+    background-color: white;
 }
 
 .flex-container{
@@ -23,9 +27,9 @@
 }
 
 .flex-group{
-font-family: din-condensed, sans-serif;
-font-weight: 900;
-height: 100%;
+    font-family: din-condensed, sans-serif;
+    font-weight: 900;
+    height: 100%;
 }
 
 .logo{
@@ -51,16 +55,18 @@ color:  #6D9886;
 }
 
 #leftGroup{
-    margin-left: 25px;
+    margin-left: 70px;
 }
 
 .find-agent{
     text-decoration: none;
-    display: inline-block;
-    transition: all .1s ease-in-out;
-    color: #393e46;
-    font-size: 15px;
-    vertical-align: middle;
+    text-transform: uppercase;
+    color: #393E46;
+    background: #6D9886;
+    padding: 10px 20px;
+    margin-left: 30px;  
+    letter-spacing: 1px;
+    transition: 0.3s;
 }
 
 #findAgentButton{
@@ -68,7 +74,12 @@ color:  #6D9886;
     border: 3px solid #393E46;
     padding: 8px;
     cursor: pointer;
-    border-radius: 15px;
+}
+
+#findAgentButton:hover{
+    background-color: #393E46;
+    color: #ffff;
+    transform: scale(1.1); 
 }
 
 #rightGroup{
@@ -82,3 +93,23 @@ color:  #6D9886;
     height: 2.15rem;
     overflow: clip;
 }
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #6D9886;
+    clip-path: circle(650px at right 750px);
+    width: 100%;
+    height: 100%;
+}
+
+.logo-head{
+    height: 3.0rem;
+}
+.logo img{
+    transition: transform 0.3s;
+}
+.logo img:hover {
+    transform: scale(1.2); 
+  }
