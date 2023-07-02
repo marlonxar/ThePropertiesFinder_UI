@@ -1,3 +1,10 @@
+
+<ng-container *ngIf="showLoader">
+    <app-loader></app-loader>
+  </ng-container>
+
+<ng-container *ngIf="!showLoader">
 <app-header></app-header>
 <app-landing-page></app-landing-page>
 <app-footer></app-footer>
+</ng-container>
