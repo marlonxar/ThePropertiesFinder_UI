@@ -1,5 +1,56 @@
-<section>
+<section [@slideFromTop]>
     <div class="content">
-        <p>contact works!</p>
+
+        <div class="leftSide">
+            <h2>{{ 'FEEL_FREE' | translate }} <br></h2>
+            <h2>{{ 'TO_CONTACT' | translate }}<span>{{ 'US' | translate }}</span></h2>
+           <p>{{ 'WE_WILL_GET_BACK_TO_YOU_AS_SOON_AS_WE_CAN' | translate }}</p>
+        </div>
+
+        <div class="rightSide"> 
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <h2>{{ 'CONTACT_FORM' | translate }}<br></h2>
+                <div class="formElement">
+                  <label for="name">{{ 'NAME' | translate }}  *</label>
+                  <input type="text" id="name" formControlName="name">
+                  <div class="formElement" *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'NAME' | translate }} {{ 'IS_REQUIRED' | translate}}
+                    </p>
+                  </div>
+                </div>
+                <div class="formElement">
+                  <label for="email">{{ 'EMAIL' | translate }}  *</label>
+                  <input type="email" id="email" formControlName="email">
+                  <div class="formElement" *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'EMAIL' | translate }} {{ 'IS_INVALID' | translate}}
+                    </p>
+                  </div>
+                </div>
+                <div class="formElement">
+                  <label for="affair">{{ 'AFFAIR' | translate }}  *</label>
+                  <input type="text" id="affair" formControlName="affair">
+                  <div class="formElement" *ngIf="contactForm.controls['affair'].invalid && contactForm.controls['affair'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'AFFAIR' | translate }} {{ 'IS_REQUIRED' | translate}}
+                    </p>
+                  </div>
+                </div>
+                <div class="formElement">
+                  <label for="message">{{ 'MESSAGE' | translate }}  *</label>
+                  <textarea id="message" formControlName="message"></textarea>
+                  <div class="formElement" *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'MESSAGE' | translate }} {{ 'IS_REQUIRED' | translate}}
+                    </p>
+                  </div>
+                </div>
+                <br>
+                <button class="formElement" type="submit" [disabled]="!contactForm.valid">{{ 'SUBMIT' | translate }}</button>
+              </form>
+            
+        </div>
+       
     </div>
     </section>
