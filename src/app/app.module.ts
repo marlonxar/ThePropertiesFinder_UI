@@ -14,6 +14,7 @@ import { BlogModule } from './blog/blog.module';
 import { ContactModule } from './contact/contact.module';
 import { FindAgentModule } from './find-agent/find-agent.module';
 import { ServicesModule } from './services/services.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -36,6 +37,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactModule,
     AboutUsModule,
     FindAgentModule,
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
