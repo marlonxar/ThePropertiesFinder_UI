@@ -15,7 +15,7 @@
     "Your_Email": "Correo Electronico",
     "Marlon_Alvarez_R_2023_All_rights_reserved": "Marlon Alvarez R. 2023. Todos los derechos reservados.",
     "LOADING" : "Cargando...",
-    "FEEL_FREE": "SIENTITE LIBRE",
+    "FEEL_FREE": "SENTITE LIBRE",
     "TO_CONTACT": "DE CONTACTAR",
     "US": "NOS",
     "WE_WILL_GET_BACK_TO_YOU_AS_SOON_AS_WE_CAN": "TE RESPONDEREMOS TAN PRONTO PODAMOS!",
@@ -26,5 +26,9 @@
     "MESSAGE": "MENSAJE",
     "SUBMIT" : "ENVIAR",
     "IS_REQUIRED": "ES REQUERIDO",
-    "IS_INVALID": "ES INVALIDO"
+    "IS_INVALID": "ES INVALIDO",
+    "US2" : "NOSOTROS",
+    "CHECK": "REVISA",
+    "OUR_LATEST_NEWS" : "NUESTRAS ULTIMAS NOTICIAS",
+    "OUR" : "NUESTROS"
 }

@@ -26,5 +26,8 @@
     "MESSAGE": "MESSAGE",
     "SUBMIT" : "SUBMIT",
     "IS_REQUIRED": "IS REQUIRED",
-    "IS_INVALID": "IS INVALID"
+    "IS_INVALID": "IS INVALID",
+    "US2" : "US",
+    "CHECK": "CHECK",
+    "OUR_LATEST_NEWS": "OUR LATEST NEWS"
 }
