@@ -1,0 +1,102 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .popup-container {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+    height: 450px;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    font-size: 20px;
+  }
+  
+  input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: din-condensed, sans-serif;
+    font-size: 15px;
+  }
+  
+  .button-container {
+    text-align: center;
+    display: flex;
+    height: 55px;
+  }
+  
+  .subscribe-button{
+    color: #F7F7F7;
+    background-image: revert;
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
+    display: block!important;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 30%;
+    border: 2px solid transparent;
+    font-size: 16px;
+    padding: 11px 36px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .subscribe-button:hover{
+    transform: scale(1.1); 
+  }
+
+  .popup-container input{
+    transition: transform 0.3s;
+  }
+
+  .popup-container input:hover{
+    transform: scale(1.05); 
+  }
+  
+  .policyMessage{
+    text-align: center;
+    font-family: din-condensed, sans-serif;
+    font-size: 15px;
+    margin: 25px;
+    color: rgb(56, 56, 56);
+  }
+
+  .policyMessage a{
+    color: rgb(56, 56, 56);
+  }
+
+  .message{
+    text-align: center;
+    font-family: din-condensed, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+  }
