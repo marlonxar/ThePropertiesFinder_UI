@@ -1,13 +1,14 @@
 <div class="popup-overlay" *ngIf="showPopup">
     <div class="popup-container">
       <span class="close-icon" (click)="closePopup()">&times;</span>
-      <h2>GET ON THE LIST</h2>
-      <span>What´s inside: new properties, exclusive sales, event invites and more.</span>
+      <h2>{{ 'GET_ON_THE_LIST' | translate }}</h2>
+      <p class="message">{{ 'POPUP_MESSAGE' | translate }}</p>
 
       <div class="button-container">
-        <input type="text"  class="subscribeNowInput">
-        <button class="subscribeButton"> &nbsp; &nbsp; ></button>
+        <input type="text" [placeholder]="yourEmailKey" class="subscribeNowInput">
+        <button class="subscribe-button"> {{ 'SUBMIT' | translate }}</button>
       </div>
+      <p class="policyMessage">{{ 'POLICY_MESSAGE' | translate }}<a routerLink="/privacy-policy" title="Privacy Policy Link">{{ 'PRIVACY_POLICY' | translate }}</a></p>
 
     </div>
   </div>

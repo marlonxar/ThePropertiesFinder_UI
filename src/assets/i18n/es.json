@@ -30,5 +30,9 @@
     "US2" : "NOSOTROS",
     "CHECK": "REVISA",
     "OUR_LATEST_NEWS" : "NUESTRAS ULTIMAS NOTICIAS",
-    "OUR" : "NUESTROS"
+    "OUR" : "NUESTROS",
+    "GET_ON_THE_LIST": "UNETE A LA LISTA",
+    "POPUP_MESSAGE": "Qué tenemos dentro: nuevas propiedades, ventas exclusivas, invitación a eventos y más.",
+    "POLICY_MESSAGE": "Para ver como podemos usar tu información, echá un vistazo a nuestra ",
+    "PRIVACY_POLICY" : "politica de privacidad"
 }

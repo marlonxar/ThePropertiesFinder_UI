@@ -29,5 +29,9 @@
     "IS_INVALID": "IS INVALID",
     "US2" : "US",
     "CHECK": "CHECK",
-    "OUR_LATEST_NEWS": "OUR LATEST NEWS"
+    "OUR_LATEST_NEWS": "OUR LATEST NEWS",
+    "GET_ON_THE_LIST": "GET ON THE LIST",
+    "POPUP_MESSAGE": "What´s inside: new properties, exclusive sales, event invites and more.",
+    "POLICY_MESSAGE": "To see how we may use your information, take a look at our ",
+    "PRIVACY_POLICY" : "privacy policy"
 }
