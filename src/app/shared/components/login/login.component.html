@@ -26,7 +26,7 @@
 
             <div class="formElement" *ngIf="isClicked">
                 <label for="password">{{ 'PASSWORD' | translate }}  *</label>
-                <input type="text" class="emailInput" formControlName="password">
+                <input type="password" class="emailInput" formControlName="password">
                 <div class="formElement" *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
                     <p role="alert" class="alert">
                         {{ 'PASSWORD' | translate }} {{ 'IS_REQUIRED' | translate}}

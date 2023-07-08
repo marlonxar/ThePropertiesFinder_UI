@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-signin',
@@ -14,5 +15,29 @@ import { trigger, style, animate, transition } from '@angular/animations';
     ])
   ]
 })
-export class SigninComponent {
+export class SigninComponent implements OnInit{
+  signin: FormGroup = new FormGroup({});
+  isClicked: boolean = false;
+
+  constructor(private formBuilder: FormBuilder){}
+
+  setClicked() {
+    this.isClicked = true;
+  }
+
+  ngOnInit() {
+    this.signin = this.formBuilder.group({
+      username: ['', Validators.required],
+      name: ['', Validators.required],
+      lastname: ['', Validators.required],
+      email: ['', Validators.required],
+      password: ['', Validators.required],
+    });
+  }
+
+  onSubmit(){
+    if (this.signin.valid) {
+      console.log(this.signin.value);
+    }
+  }
 }

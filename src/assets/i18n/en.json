@@ -20,8 +20,8 @@
     "US": "US",
     "WE_WILL_GET_BACK_TO_YOU_AS_SOON_AS_WE_CAN": "WE WILL GET BACK TO YOU AS SOON AS WE CAN!",
     "CONTACT_FORM": "CONTACT FORM",
-    "NAME": "NAME",
-    "EMAIL": "EMAIL",
+    "NAME": "Name",
+    "EMAIL": "Email",
     "AFFAIR": "AFFAIR",
     "MESSAGE": "MESSAGE",
     "SUBMIT" : "SUBMIT",
@@ -44,5 +44,7 @@
     "NEXT": "NEXT",
     "PASSWORD": "Password",
     "FORGOT_PASSWORD": "Forgot your password?",
-    "FORGOT_USERNAME": "Forgot username?"
+    "FORGOT_USERNAME": "Forgot username?",
+    "SIGNIN_MESSAGE" : "Please provide your information.",
+    "LAST_NAME" : "Last Name"
 }
