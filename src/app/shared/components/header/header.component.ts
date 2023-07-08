@@ -13,6 +13,7 @@ export class HeaderComponent {
   constructor(private translateService: TranslateService, private router: Router){
     this.lang = localStorage.getItem('lang') || 'en';
   }
+  
   getCurrentRoute(): string {
     return this.router.url;
   }

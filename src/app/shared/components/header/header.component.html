@@ -14,9 +14,14 @@
         <div class="flex-group" id="rightGroup">
             <a routerLink="/find-agent" tabindex="0" id="headerFindAgent" title="Real Estate Agents" class="find-agent" id="findAgentButton"> <a id="theWord">{{'FIND' | translate}}</a> {{'AN_AGENT' | translate}} </a>
 
-            <a href="/" title="User Options" class="logo">
+            <a href="/" title="User Options" class="logo c">
             <img src="/assets/images/userHeader.png" alt="Options to users" class="user-opt" id="user-opt">
+            <div id="drop-down">
+                <a routerLink="/login" class="clinks">   {{ 'LOGIN' | translate }}  </a>
+                <a routerLink="/signin" class="clinks">   {{ 'SIGNIN' | translate }}  </a>
+            </div>
             </a>
+           
             </div>
     </nav>
 

@@ -36,5 +36,13 @@
     "PRIVACY_POLICY" : "privacy policy",
     "TALK": "Let's Talk",
     "I_AM": "I am Marlon Alvarez Rodriguez.",
-    "ABOUT_MARLON": "I am a full-stack developer.  I am also passionate about technology, currently I am the person behind this idea. I love innovative ideas or those that provide different characteristics than usual. I consider myself a person who loves learning and developing new things with my talent. Enjoy this one!"
+    "ABOUT_MARLON": "I am a full-stack developer.  I am also passionate about technology, currently I am the person behind this idea. I love innovative ideas or those that provide different characteristics than usual. I consider myself a person who loves learning and developing new things with my talent. Enjoy this one!",
+    "LOGIN": "Login",
+    "SIGNIN" : "Signin",
+    "LOGIN_MESSAGE" : "Please enter your credentials to log in.",
+    "USERNAME": "Username",
+    "NEXT": "NEXT",
+    "PASSWORD": "Password",
+    "FORGOT_PASSWORD": "Forgot your password?",
+    "FORGOT_USERNAME": "Forgot username?"
 }

@@ -1,0 +1,52 @@
+<section [@slideFromTop]>
+    <div class="content">
+
+        <div class="mainDiv"> 
+           
+     
+       
+ <div class="auth-container">
+    <div class="auth-content">
+        <h2>{{ 'LOGIN' | translate }}</h2>
+        <p class="message">{{ 'LOGIN_MESSAGE' | translate }}</p>
+
+        <div class="button-container">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <div class="formElement">
+            <label for="username">{{ 'USERNAME' | translate }}  *</label>
+            <input type="text" class="emailInput" formControlName="username">
+            <div class="formElement" *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched">
+                <p role="alert" class="alert">
+                    {{ 'USERNAME' | translate }} {{ 'IS_REQUIRED' | translate}}
+                </p>
+              </div>
+            <button class="logIn-button" (click)="setClicked()" *ngIf="!isClicked" [disabled]="!loginForm.controls['username'].valid"> {{ 'NEXT' | translate }}</button>
+            </div>
+
+            <div class="formElement" *ngIf="isClicked">
+                <label for="password">{{ 'PASSWORD' | translate }}  *</label>
+                <input type="text" class="emailInput" formControlName="password">
+                <div class="formElement" *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'PASSWORD' | translate }} {{ 'IS_REQUIRED' | translate}}
+                    </p>
+                  </div>
+            </div>
+
+            <button class="logIn-button" *ngIf="isClicked"  type="submit" [disabled]="!loginForm.valid" > {{ 'SUBMIT' | translate }}</button>
+            </form>
+          </div>
+
+          <a tabindex="0" routerLink="/forgot-password" class="forgot">{{ 'FORGOT_PASSWORD' | translate }}</a>
+          <a tabindex="0" routerLink="/forgot-username" class="forgot">{{ 'FORGOT_USERNAME' | translate }}</a>
+    </div>
+ </div>
+
+</div>
+    </div>
+    </section>
+
+
+
+   
