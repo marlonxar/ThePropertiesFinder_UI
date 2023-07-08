@@ -15,7 +15,7 @@ import { ContactModule } from './contact/contact.module';
 import { FindAgentModule } from './find-agent/find-agent.module';
 import { ServicesModule } from './services/services.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SubscribePopupComponent } from './shared/subscribe-popup/subscribe-popup.component';
+import { SubscribePopupComponent } from './shared/components/subscribe-popup/subscribe-popup.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
