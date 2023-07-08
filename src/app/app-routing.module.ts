@@ -6,6 +6,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { SigninComponent } from './shared/components/signin/signin.component';
+import { LoginComponent } from './shared/components/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'login', component: LoginComponent },
   { path: '**', component: LandingPageComponent }
 ];
 

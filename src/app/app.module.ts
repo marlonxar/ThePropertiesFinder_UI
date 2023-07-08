@@ -16,6 +16,8 @@ import { FindAgentModule } from './find-agent/find-agent.module';
 import { ServicesModule } from './services/services.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SubscribePopupComponent } from './shared/components/subscribe-popup/subscribe-popup.component';
+import { LoginModule } from './shared/components/login/login.module';
+import { SigninModule } from './shared/components/signin/signin.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -39,6 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactModule,
     AboutUsModule,
     FindAgentModule,
+    LoginModule,
+    SigninModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
