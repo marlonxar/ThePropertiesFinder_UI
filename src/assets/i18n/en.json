@@ -31,7 +31,10 @@
     "CHECK": "CHECK",
     "OUR_LATEST_NEWS": "OUR LATEST NEWS",
     "GET_ON_THE_LIST": "GET ON THE LIST",
-    "POPUP_MESSAGE": "What´s inside: new properties, exclusive sales, event invites and more.",
+    "POPUP_MESSAGE": "What's inside: new properties, exclusive sales, event invites and more.",
     "POLICY_MESSAGE": "To see how we may use your information, take a look at our ",
-    "PRIVACY_POLICY" : "privacy policy"
+    "PRIVACY_POLICY" : "privacy policy",
+    "TALK": "Let's Talk",
+    "I_AM": "I am Marlon Alvarez Rodriguez.",
+    "ABOUT_MARLON": "I am a full-stack developer.  I am also passionate about technology, currently I am the person behind this idea. I love innovative ideas or those that provide different characteristics than usual. I consider myself a person who loves learning and developing new things with my talent. Enjoy this one!"
 }

@@ -4,13 +4,10 @@
                 <div class="about-text">
                     <h1> {{ 'ABOUT' | translate }} {{ 'US' | translate }}</h1>
                     <h5>CEO<span> & Software developer</span></h5>
-                    <p><span>I am Marlon Alvarez Rodriguez.</span> I am a full-stack developer.
-                        I am passionate about technology. I am in charge of taking this idea to the next level, 
-                        with market leading ideas and the best technologies. A perfect design. 
-                        Providing an incredible experience different from what is on the market
-                        and accessible to all users.
+                    <p><span>{{ 'I_AM' | translate }}</span> 
+                        {{ 'ABOUT_MARLON' | translate }}
                     </p>
-                    <button>Let's Talk</button>
+                    <button (click)="goToLinkedIn()">{{ 'TALK' | translate }}</button>
                 </div>
             </div>
     </section>
