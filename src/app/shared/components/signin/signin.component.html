@@ -2,8 +2,78 @@
     <div class="content">
 
         <div class="mainDiv"> 
-            <h2>Registro <span> NUEVO USER</span></h2>
-        </div>
+           
+     
        
+ <div class="auth-container">
+    <div class="auth-content">
+        <h2>{{ 'SIGNIN' | translate }}</h2>
+        <p class="message">{{ 'SIGNIN_MESSAGE' | translate }}</p>
+
+        <div class="button-container">
+            <form [formGroup]="signin" (ngSubmit)="onSubmit()">
+
+            <div class="formElement">
+            <label for="username">{{ 'USERNAME' | translate }}  *</label>
+            <input type="text" class="emailInput" formControlName="username">
+            <div class="formElement" *ngIf="signin.controls['username'].invalid && signin.controls['username'].touched">
+                <p role="alert" class="alert">
+                    {{ 'USERNAME' | translate }} {{ 'IS_REQUIRED' | translate}}
+                </p>
+              </div>
+            </div>
+
+            <div class="formElement">
+                <label for="name">{{ 'NAME' | translate }}  *</label>
+                <input type="text" class="emailInput" formControlName="name">
+                <div class="formElement" *ngIf="signin.controls['name'].invalid && signin.controls['name'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'NAME' | translate }} {{ 'IS_REQUIRED' | translate}}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="formElement">
+                    <label for="lastname">{{ 'LAST_NAME' | translate }}  *</label>
+                    <input type="text" class="emailInput" formControlName="lastname">
+                    <div class="formElement" *ngIf="signin.controls['lastname'].invalid && signin.controls['lastname'].touched">
+                        <p role="alert" class="alert">
+                            {{ 'LAST_NAME' | translate }} {{ 'IS_REQUIRED' | translate}}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="formElement">
+                        <label for="email">{{ 'EMAIL' | translate }}  *</label>
+                        <input type="text" class="emailInput" formControlName="email">
+                        <div class="formElement" *ngIf="signin.controls['email'].invalid && signin.controls['email'].touched">
+                            <p role="alert" class="alert">
+                                {{ 'EMAIL' | translate }} {{ 'IS_REQUIRED' | translate}}
+                            </p>
+                          </div>
+                        </div>
+
+            <div class="formElement">
+                <label for="password">{{ 'PASSWORD' | translate }}  *</label>
+                <input type="password" class="emailInput" formControlName="password">
+                <div class="formElement" *ngIf="signin.controls['password'].invalid && signin.controls['password'].touched">
+                    <p role="alert" class="alert">
+                        {{ 'PASSWORD' | translate }} {{ 'IS_REQUIRED' | translate}}
+                    </p>
+                  </div>
+            </div>
+
+            <button class="logIn-button"  type="submit" [disabled]="!signin.valid" > {{ 'SUBMIT' | translate }}</button>
+            </form>
+          </div>
+
+    </div>
+ </div>
+
+</div>
     </div>
     </section>
+
+
+
+   

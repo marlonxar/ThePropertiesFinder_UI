@@ -27,20 +27,20 @@ section{
 }
 
 .content .mainDiv{
-    background-color: #ffffd5;
+    background-color: #cccccc;
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     padding-top: 25px;
 }
 
 .content .mainDiv h2{
-    font-size: 3.1em;
+    font-size: 25px;
     text-transform: uppercase;
-    color: #6D9886;
+    color: #121212;
     line-height: 1.2;
     transition: transform 0.3s;
 }
@@ -53,10 +53,103 @@ section{
     transform: scale(1.05);
 }
 
-.content .mainDiv h2 span{
-    background: #393E46;
-    color: #ffffd5;
+.content .mainDiv p{
+    color: #232323;
     padding: 0 10px;
-    font-weight: 600;
     transition: transform 0.3s;
 }
+
+.auth-container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.auth-content{
+    display: grid;
+    background-color: #fff;
+    padding: 55px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    height: 715px;
+    width: 425px;
+    transition: transform 0.3s;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: din-condensed, sans-serif;
+    font-size: 15px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .logIn-button{
+    color: #F7F7F7;
+    background-image: revert;
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
+    display: block!important;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 60%;
+    border: 2px solid transparent;
+    font-size: 16px;
+    padding: 11px 36px;
+    transition: transform 0.3s;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  .logIn-button:hover{
+    transform: scale(1.1); 
+  }
+
+  .button-container input{
+    transition: transform 0.3s;
+  }
+
+  .button-container input:hover{
+    transform: scale(1.05); 
+  }
+
+  .message{
+    margin-top: 15px;
+}
+
+.forgot{
+    margin-top: 15px;
+    color: #232323;
+    cursor: pointer;
+}
+
+.logIn-button:disabled {
+    background-color: #4e4e4e87;
+    color: #f7f7f792;
+    cursor: not-allowed;
+  }
+
+  .formElement{
+    width: 100%;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .alert{
+    font-size: 12px;
+    color: red !important;
+    text-transform: uppercase;
+  }

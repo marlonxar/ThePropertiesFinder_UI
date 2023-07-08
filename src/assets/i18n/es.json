@@ -20,8 +20,8 @@
     "US": "NOS",
     "WE_WILL_GET_BACK_TO_YOU_AS_SOON_AS_WE_CAN": "TE RESPONDEREMOS TAN PRONTO PODAMOS!",
     "CONTACT_FORM": "FORMULARIO DE CONTACTO",
-    "NAME": "NOMBRE",
-    "EMAIL": "CORREO Electronico",
+    "NAME": "Nombre",
+    "EMAIL": "Correo Electronico",
     "AFFAIR": "ASUNTO",
     "MESSAGE": "MENSAJE",
     "SUBMIT" : "ENVIAR",
@@ -45,5 +45,7 @@
     "NEXT": "Siguiente",
     "PASSWORD": "Contraseña",
     "FORGOT_PASSWORD": "Olvidó su contraseña?",
-    "FORGOT_USERNAME": "Olvidó su nombre de usuario?"
+    "FORGOT_USERNAME": "Olvidó su nombre de usuario?",
+    "SIGNIN_MESSAGE" : "Por favor ingrese su información.",
+    "LAST_NAME" : "Apellido"
 }
