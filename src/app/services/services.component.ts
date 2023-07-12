@@ -14,6 +14,4 @@ import { trigger, style, animate, transition } from '@angular/animations';
     ])
   ]
 })
-export class ServicesComponent {
-
-}
+export class ServicesComponent {}

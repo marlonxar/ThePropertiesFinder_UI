@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -18,16 +17,12 @@ import { trigger, style, animate, transition } from '@angular/animations';
     ])
   ]
 })
+
 export class LandingPageComponent {
-  lang: String;
   isVisible = true;
 
   toggleVisibility() {
     this.isVisible = !this.isVisible;
-  }
-
-  constructor(private translateService: TranslateService){
-    this.lang = localStorage.getItem('lang') || 'en';
   }
 
 }
