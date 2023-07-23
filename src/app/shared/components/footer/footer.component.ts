@@ -14,7 +14,6 @@ constructor(private translateService: TranslateService){
   this.lang = localStorage.getItem('lang') || 'en';
 }
 ngOnInit(): void {
-  
   this.translateService.get('Your_Email').subscribe((translation: string) => {
     this.yourEmailKey = translation;});
 

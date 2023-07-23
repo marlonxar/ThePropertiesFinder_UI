@@ -22,7 +22,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     })
-  ],
-  exports:[ServicesComponent]
+  ]
 })
 export class ServicesModule { }

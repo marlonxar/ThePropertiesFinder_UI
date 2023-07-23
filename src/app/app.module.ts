@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingPageModule } from './mainModules/landing-page/landing-page.module';
 import { SharedModule } from './shared/shared.module';
 import { FindAgentModule } from './mainModules/find-agent/find-agent.module';
+import { ServicesModule } from './mainModules/services/services.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BlogModule,
     ContactModule,
     FindAgentModule,
+    ServicesModule,
     AboutUsModule,
     LandingPageModule,
     BrowserAnimationsModule,

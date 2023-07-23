@@ -62,5 +62,12 @@
     "OPPORTUNITY_TRACKING" : "Opportunity tracking",
     "OPPORTUNITY_TRACKING_DESCRIPTION": "For premium users, we track opportunity sales and notify them via email.",
     "COMPUTER_MOBILE" : "Computer-Mobile",
-    "COMPUTER_MOBILE_DESCRIPTION" : "Our platform is friendly for mobile or computer users."
+    "COMPUTER_MOBILE_DESCRIPTION" : "Our platform is friendly for mobile or computer users.",
+    "NEW_PUBLICATIONS" : "Catalog of new properties",
+    "HOUSE" : "House",
+    "LAND" : "Land",
+    "BEDS" : "Beds",
+    "BATHS" : "Baths",
+    "BED" : "Bed",
+    "BATH" : "Bath"
 }
