@@ -12,6 +12,8 @@ import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductCatalogComponent } from './components/product-catalog/product-catalog.component';
+import { ChunkPipe } from './components/product-catalog/custom-pipes';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -24,7 +26,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppLoaderComponent,
     SubscribePopupComponent,
     LoginComponent,
-    SigninComponent
+    SigninComponent,
+    ProductCatalogComponent,
+    ChunkPipe
   ],
   imports: [
     ReactiveFormsModule,
@@ -47,7 +51,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SubscribePopupComponent,
     LoginComponent,
     SigninComponent,
-    AppRoutingModule
+    AppRoutingModule,
+    ProductCatalogComponent
   ]
 })
 export class SharedModule { }

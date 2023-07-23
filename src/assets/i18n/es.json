@@ -63,5 +63,12 @@
     "OPPORTUNITY_TRACKING" : "Seguimiento de oportunidades",
     "OPPORTUNITY_TRACKING_DESCRIPTION": "Para usuarios premium, contamos con seguimiento ventas de oportunidad y se notifica vía email",
     "COMPUTER_MOBILE" : "Computadora-Movil",
-    "COMPUTER_MOBILE_DESCRIPTION" : "Nuestra plaforma es amigable para usuarios de telefono movil o computadora"
+    "COMPUTER_MOBILE_DESCRIPTION" : "Nuestra plaforma es amigable para usuarios de telefono movil o computadora",
+    "NEW_PUBLICATIONS" : "Catalogo de nuevas propiedades",
+    "HOUSE" : "Casa",
+    "LAND" : "Terreno",
+    "BEDS" : "Camas",
+    "BATHS" : "Baños",
+    "BED" : "Cama",
+    "BATH" : "Baño"
 }

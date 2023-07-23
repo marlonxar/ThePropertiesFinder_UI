@@ -1,0 +1,37 @@
+
+<div class="product-container">
+    <p class="title">{{ title }}</p>
+    <div class="rows-container">
+        <div class="product-row" *ngFor="let row of properties | chunk: 4">
+          <div class="product-item" *ngFor="let property of row">
+            <div class="type">
+            <span>{{ property.type | translate }}</span>
+            </div>
+            <div class="image-container">
+                <img [src]="property.photoUrl" alt="Property Photo" (error)="handleImageError($event)">
+            </div>
+            <div class="product-information">
+                <span class="price">{{ property.price | currency }}</span>
+                <span class="beds" *ngIf="property.beds === 1; else pluralTranslation">
+                    {{ property.beds }} {{ 'BED' | translate }}
+                  </span>
+                  <ng-template #pluralTranslation>
+                    <span class="beds">
+                      {{ property.beds }} {{ 'BEDS' | translate }}
+                    </span>
+                  </ng-template>
+                  <span class="baths" *ngIf="property.baths === 1; else BathsPluralTranslation">
+                    {{ property.baths }} {{ 'BATH' | translate }}
+                  </span>
+                  
+                  <ng-template #BathsPluralTranslation>
+                    <span class="baths">
+                      {{ property.baths }} {{ 'BATHS' | translate }}
+                    </span>
+                  </ng-template>
+            </div>
+            <span class="address">{{ property.address }}</span>
+          </div>
+        </div>
+        </div>
+      </div>
