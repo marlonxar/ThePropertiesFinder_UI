@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss'],
+  selector: 'app-find-agent',
+  templateUrl: './find-agent.component.html',
+  styleUrls: ['./find-agent.component.scss'],
   animations: [
     trigger('slideIn', [
       transition(':enter', [
@@ -18,16 +17,6 @@ import { trigger, style, animate, transition } from '@angular/animations';
     ])
   ]
 })
-export class LandingPageComponent {
-  lang: String;
-  isVisible = true;
-
-  toggleVisibility() {
-    this.isVisible = !this.isVisible;
-  }
-
-  constructor(private translateService: TranslateService){
-    this.lang = localStorage.getItem('lang') || 'en';
-  }
+export class FindAgentComponent {
 
 }

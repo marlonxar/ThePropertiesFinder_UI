@@ -1,23 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { AppLoaderComponent } from './shared/components/app-loader/app-loader.component';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
-import { AboutUsModule } from './about-us/about-us.module';
-import { BlogModule } from './blog/blog.module';
-import { ContactModule } from './contact/contact.module';
-import { FindAgentModule } from './find-agent/find-agent.module';
-import { ServicesModule } from './services/services.module';
+import { AboutUsModule } from './mainModules/about-us/about-us.module';
+import { BlogModule } from './mainModules/blog/blog.module';
+import { ContactModule } from './mainModules/contact/contact.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SubscribePopupComponent } from './shared/components/subscribe-popup/subscribe-popup.component';
-import { LoginModule } from './shared/components/login/login.module';
-import { SigninModule } from './shared/components/signin/signin.module';
+import { LandingPageModule } from './mainModules/landing-page/landing-page.module';
+import { SharedModule } from './shared/shared.module';
+import { FindAgentModule } from './mainModules/find-agent/find-agent.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,24 +18,17 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    LandingPageComponent,
-    AppLoaderComponent,
-    SubscribePopupComponent,
+    AppComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
     BlogModule,
-    ServicesModule,
     ContactModule,
-    AboutUsModule,
     FindAgentModule,
-    LoginModule,
-    SigninModule,
+    AboutUsModule,
+    LandingPageModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {

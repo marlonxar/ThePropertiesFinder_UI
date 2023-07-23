@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { trigger, state, style, animate, transition, query } from '@angular/animations';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
-  selector: 'app-find-agent',
-  templateUrl: './find-agent.component.html',
-  styleUrls: ['./find-agent.component.scss'],
+  selector: 'app-landing-page',
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.scss'],
   animations: [
     trigger('slideIn', [
       transition(':enter', [
@@ -17,6 +17,12 @@ import { trigger, state, style, animate, transition, query } from '@angular/anim
     ])
   ]
 })
-export class FindAgentComponent {
+
+export class LandingPageComponent {
+  isVisible = true;
+
+  toggleVisibility() {
+    this.isVisible = !this.isVisible;
+  }
 
 }

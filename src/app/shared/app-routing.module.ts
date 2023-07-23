@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FindAgentComponent } from './find-agent/find-agent.component';
-import { BlogComponent } from './blog/blog.component';
-import { ContactComponent } from './contact/contact.component';
-import { ServicesComponent } from './services/services.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { SigninComponent } from './shared/components/signin/signin.component';
-import { LoginComponent } from './shared/components/login/login.component';
+import { FindAgentComponent } from '../mainModules/find-agent/find-agent.component';
+import { BlogComponent } from '../mainModules/blog/blog.component';
+import { ContactComponent } from '../mainModules/contact/contact.component';
+import { ServicesComponent } from '../mainModules/services/services.component';
+import { LandingPageComponent } from '../mainModules/landing-page/landing-page.component';
+import { AboutUsComponent } from '../mainModules/about-us/about-us.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', component: LandingPageComponent }
+  { path: '*', component: LandingPageComponent }
 ];
 
 @NgModule({

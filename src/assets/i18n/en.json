@@ -46,5 +46,21 @@
     "FORGOT_PASSWORD": "Forgot your password?",
     "FORGOT_USERNAME": "Forgot username?",
     "SIGNIN_MESSAGE" : "Please provide your information.",
-    "LAST_NAME" : "Last Name"
+    "LAST_NAME" : "Last Name",
+    "OUR_SERVICES" : "Our Services",
+    "SPECIFIC_ADDRESSES": "Specific addresses",
+    "ADDRESSES_DESCRIPTION": "Map system to accurately locate the address of a property.",
+    "MARKTING" : "Marketing",
+    "MARKETING_DESCRIPTION":"Our platform is given the task of marketing your content.",
+    "DATA_ANALYSIS" : "Data Analysis",
+    "DATA_ANALYSIS_DESCRIPTION" : "We carry out an analysis of the proposals in the market.",
+    "WCAG": "WCAG",
+    "WCAG_DESCRIPTION" : "Our platform is friendly to people with disabilities.",
+    "WEB_DESIGN" : "Web Design",
+    "WEB_DESIGN_DESCRIPTION": "We have a friendly and modern design.",
+    "BLOG_DESCRIPTION" : "We have a section that shows any update of our platform.",
+    "OPPORTUNITY_TRACKING" : "Opportunity tracking",
+    "OPPORTUNITY_TRACKING_DESCRIPTION": "For premium users, we track opportunity sales and notify them via email.",
+    "COMPUTER_MOBILE" : "Computer-Mobile",
+    "COMPUTER_MOBILE_DESCRIPTION" : "Our platform is friendly for mobile or computer users."
 }
