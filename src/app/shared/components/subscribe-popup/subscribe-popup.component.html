@@ -1,6 +1,6 @@
 <div class="popup-overlay" *ngIf="showPopup">
     <div class="popup-container">
-      <span class="close-icon" (click)="closePopup()">&times;</span>
+      <span class="close-icon" (click)="closePopup()" tabindex="0" >&times;</span>
       <h2>{{ 'GET_ON_THE_LIST' | translate }}</h2>
       <p class="message">{{ 'POPUP_MESSAGE' | translate }}</p>
 

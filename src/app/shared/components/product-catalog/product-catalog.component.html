@@ -3,7 +3,7 @@
     <p class="title">{{ title }}</p>
     <div class="rows-container">
         <div class="product-row" *ngFor="let row of properties | chunk: 4">
-          <div class="product-item" *ngFor="let property of row">
+          <div class="product-item" *ngFor="let property of row" tabindex="0">
             <div class="type">
             <span>{{ property.type | translate }}</span>
             </div>
@@ -34,4 +34,5 @@
           </div>
         </div>
         </div>
+        <button routerLink="/properties-catalog" title="Properties Catalog">{{ 'See more' | translate }}</button>
       </div>
