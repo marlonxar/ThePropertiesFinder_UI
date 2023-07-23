@@ -47,5 +47,21 @@
     "FORGOT_PASSWORD": "Olvidó su contraseña?",
     "FORGOT_USERNAME": "Olvidó su nombre de usuario?",
     "SIGNIN_MESSAGE" : "Por favor ingrese su información.",
-    "LAST_NAME" : "Apellido"
+    "LAST_NAME" : "Apellido",
+    "OUR_SERVICES" : "Nuestros Servicios",
+    "SPECIFIC_ADDRESSES": "Dirección Especifica",
+    "ADDRESSES_DESCRIPTION": "Sistema de mapa para señalar la ubicación especifica.",
+    "MARKTING" : "Mercadeo",
+    "MARKETING_DESCRIPTION":"Nuestra plataforma se da la tarea de mercadear su contenido.",
+    "DATA_ANALYSIS" : "Analisis de nuestra data",
+    "DATA_ANALYSIS_DESCRIPTION" : "Realizamos un analisis del mercado actual",
+    "WCAG": "WCAG",
+    "WCAG_DESCRIPTION" : "Nuestra plataforma es amigable a personas con discapacidades.",
+    "WEB_DESIGN" : "Diseño web",
+    "WEB_DESIGN_DESCRIPTION": "Tenemos un diseño amigable y moderno.",
+    "BLOG_DESCRIPTION" : "Tenemos una sección que muestra las ultimas actualizaciones de nuestra plataforma.",
+    "OPPORTUNITY_TRACKING" : "Seguimiento de oportunidades",
+    "OPPORTUNITY_TRACKING_DESCRIPTION": "Para usuarios premium, contamos con seguimiento ventas de oportunidad y se notifica vía email",
+    "COMPUTER_MOBILE" : "Computadora-Movil",
+    "COMPUTER_MOBILE_DESCRIPTION" : "Nuestra plaforma es amigable para usuarios de telefono movil o computadora"
 }

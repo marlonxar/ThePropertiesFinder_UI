@@ -22,12 +22,12 @@
     margin-bottom: 60px;
     font-weight: 6000;
     position: relative;
-    color: #1C1C1C;
+    color: #000000;
 }
 
 .container h1::after{
     content: '';
-    background: #1C1C1C;
+    background: #000000;
     width: 100px;
     height: 5px;
     position: absolute;
