@@ -153,3 +153,9 @@ input {
     color: red !important;
     text-transform: uppercase;
   }
+
+  #buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
