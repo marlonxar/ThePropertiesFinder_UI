@@ -34,5 +34,5 @@
           </div>
         </div>
         </div>
-        <button routerLink="/properties-catalog" title="Properties Catalog">{{ 'See more' | translate }}</button>
+        <button *ngIf="cant !== -1" routerLink="/properties-catalog" title="Properties Catalog">{{ 'See more' | translate }}</button>
       </div>

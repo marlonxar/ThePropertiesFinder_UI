@@ -23,11 +23,13 @@ export class ProductCatalogComponent implements OnInit{
   constructor(private translateService: TranslateService){
     this.lang = localStorage.getItem('lang') || 'en';
     this.title = 'Catalog';
-    this.cant = 4;
+    this.cant = -1;
   }
 
   ngOnInit(): void {
+    if(this.cant != -1){
     this.properties = this.properties.slice(0, this.cant);
+  }
     console.log(this.cant)
     console.log(this.properties)
   }
