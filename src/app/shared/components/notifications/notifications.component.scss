@@ -1,0 +1,25 @@
+.notification {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ececac;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 65%;
+    height: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  

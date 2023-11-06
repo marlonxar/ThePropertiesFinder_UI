@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 interface Property {
   type: string;
@@ -13,7 +14,15 @@ interface Property {
 @Component({
   selector: 'app-product-catalog',
   templateUrl: './product-catalog.component.html',
-  styleUrls: ['./product-catalog.component.scss']
+  styleUrls: ['./product-catalog.component.scss'],
+  animations: [
+    trigger('slideFromTop', [
+      transition(':enter', [
+        style({ transform: 'translateY(-100%)', opacity: 0 }),
+        animate('500ms ease-out', style({ transform: 'translateY(0)', opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class ProductCatalogComponent implements OnInit{
   @Input() title: string;

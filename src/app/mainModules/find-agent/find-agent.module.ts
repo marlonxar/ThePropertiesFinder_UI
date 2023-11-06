@@ -4,6 +4,8 @@ import { FindAgentComponent } from './find-agent.component';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { AgentsComponent } from './agents/agents.component';
+import { ChunkPipe } from './agents/custom-pipes';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -11,7 +13,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    FindAgentComponent
+    FindAgentComponent,
+    AgentsComponent,
+    ChunkPipe
   ],
   imports: [
     CommonModule,
