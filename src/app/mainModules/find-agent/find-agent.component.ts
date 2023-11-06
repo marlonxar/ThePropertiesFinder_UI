@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-find-agent',
@@ -17,6 +18,10 @@ import { trigger, style, animate, transition } from '@angular/animations';
     ])
   ]
 })
-export class FindAgentComponent {
 
+export class FindAgentComponent {
+  lang: String;
+  constructor(private translateService: TranslateService){
+    this.lang = localStorage.getItem('lang') || 'en';
+  }
 }

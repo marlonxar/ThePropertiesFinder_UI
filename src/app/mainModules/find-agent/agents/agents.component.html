@@ -1,0 +1,24 @@
+<div class="agents-container">
+    <div class="rows-container" *ngFor="let row of agents | chunk: 4">
+        <div class="card" *ngFor="let agent of row" tabindex="0">
+            <div class="card-content">
+                <div class="profile-picture">
+                    <div class="picture">
+                        <img alt [src]="agent.photoUrl" alt="Agent Photo" (error)="handleImageError($event)">
+                    </div>
+                </div>
+                <div class="info-container">
+                    <a class="agent-name">
+                        {{ agent.name }}
+                    </a>
+                    <div class="content-info">
+                        <div class="data">
+                            <span>{{ agent.place }}</span>
+                            <span>{{ agent.number }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

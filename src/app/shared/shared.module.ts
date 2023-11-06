@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCatalogComponent } from './components/product-catalog/product-catalog.component';
 import { ChunkPipe } from './components/product-catalog/custom-pipes';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent,
     SigninComponent,
     ProductCatalogComponent,
-    ChunkPipe
+    ChunkPipe,
+    NotificationsComponent
   ],
   imports: [
     ReactiveFormsModule,

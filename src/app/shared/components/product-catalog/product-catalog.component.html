@@ -1,5 +1,6 @@
+<app-notifications [message]="'If you need a real estate agent, you can find one in the agents section.'"></app-notifications>
 
-<div class="product-container">
+<div class="product-container" [@slideFromTop]>
     <p class="title">{{ title }}</p>
     <div class="rows-container">
         <div class="product-row" *ngFor="let row of properties | chunk: 4">
