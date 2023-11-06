@@ -8,6 +8,7 @@ import { LandingPageComponent } from '../mainModules/landing-page/landing-page.c
 import { AboutUsComponent } from '../mainModules/about-us/about-us.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProductCatalogComponent } from './components/product-catalog/product-catalog.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'login', component: LoginComponent },
-  { path: '*', component: LandingPageComponent }
+  { path: '*', component: LandingPageComponent },
+  { path: 'properties-catalog', component: ProductCatalogComponent }
 ];
 
 @NgModule({
