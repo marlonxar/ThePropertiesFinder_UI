@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -18,11 +19,22 @@ import { trigger, style, animate, transition } from '@angular/animations';
   ]
 })
 
-export class LandingPageComponent {
+export class LandingPageComponent{
   isVisible = true;
+
+  constructor(private elementRef: ElementRef) {}
 
   toggleVisibility() {
     this.isVisible = !this.isVisible;
+  }
+
+  scrollToProductCatalog() {
+   // Obtiene la altura del componente
+   const element = this.elementRef.nativeElement;
+   const offset = element.offsetHeight/2.85;
+
+   // Realiza el desplazamiento hacia abajo
+   window.scrollBy({ top: offset, left: 0, behavior: 'smooth' });
   }
 
 }
