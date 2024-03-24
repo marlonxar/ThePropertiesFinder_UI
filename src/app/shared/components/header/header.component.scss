@@ -148,3 +148,28 @@ color:  #6D9886;
     .clinks:hover{
         background-color: #bcbcbc;
     }
+
+    
+.language-dropdown {
+    background-color: transparent;
+    color: #626062;
+    border: none; 
+    font-family: din-condensed, sans-serif;
+    font-weight: 900;
+  }
+
+  .languageDiv{
+    margin: 2px;
+    display: flex;
+  }
+
+  .languageDiv {
+  transition: transform 0.3s;
+  select{
+    cursor: pointer;
+  }
+    }
+
+  .languageDiv:hover{
+    transform: scale(1.1); 
+  }
