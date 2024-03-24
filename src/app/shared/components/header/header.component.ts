@@ -17,5 +17,13 @@ export class HeaderComponent {
   getCurrentRoute(): string {
     return this.router.url;
   }
+
+  changeLang(target: EventTarget | null) {
+    if (target instanceof HTMLSelectElement) {
+      const lang = target.value;
+     localStorage.setItem('lang', lang);
+     window.location.reload();
+    }
+  }
   
 }

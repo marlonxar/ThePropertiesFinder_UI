@@ -21,7 +21,15 @@
                 <a routerLink="/signin" class="clinks">   {{ 'SIGNIN' | translate }}  </a>
             </div>
             </a>
-           
+            <div class="languageDiv">
+                <img src="/assets/images/en.png" alt="English" *ngIf="lang=='en'">
+                <img src="/assets/images/es.png" alt="Español" *ngIf="lang=='es'">
+                <select class="language-dropdown" (change)="changeLang($event.target)">
+                    <option value="" selected disabled>Language</option>
+                    <option value="en" [selected]="lang == 'en'" >English</option>
+                    <option value="es" [selected]="lang == 'es'">Español</option>
+                  </select>
+                  </div>
             </div>
     </nav>
 
